@@ -1,0 +1,43 @@
+ /* main css styles */
+ /*
+ main css styles
+ main css styles
+ main css styles
+ main css styles
+ */
+ *{
+    background-color: red;
+ }
+ h1{
+   color:#FFFFFF;
+}
+p{
+   font-size: 50px;
+   background-color: #000000;
+   color: #f2f2f2;
+}
+#will{
+   font-size: 50px;
+   text-align: center;
+}
+#it{
+   font-family: 'Courier New';
+   font-style: italic;
+}
+#para1{
+   text-align: right;
+   font-style: normal;
+}
+.beside{
+   font-style: oblique;
+   text-align: end;
+
+}
+.right{
+   font-weight: 400;
+   font-size: smaller;
+}
+.left{
+   color: red;
+   text-decoration: double;
+}
