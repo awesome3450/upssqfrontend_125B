@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absolute</title>
+    <style>
+        /* div.container{
+            position: relative;
+            width: 600px;
+            left: 30%;
+            height: 200px;
+            border: 3px solid red;
+            bottom: 50%;
+        } */
+        div.absolute{
+            border: 3px solid #73ad21;
+            position: absolute;
+            right: 35%;
+            bottom: 40%;
+        }
+    </style>
 </head>
 <body>
     <a href="./">positions</a>
-    <h1>this is an absolute file</h1>
+    <h1>Position absolute</h1>
+    <p>An element position absolute is positioned relative to the positioned ancestor.</p>
+    <div class="container">
+         <div class="absolute">this div has position absolute</div>
+        </div>
+   
 </body>
 </html>
