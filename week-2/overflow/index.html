@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css-overflow</title>
+    <title>css-overflow</title> 
+    <style>
+        span{
+            color: red;
+        }
+        p~div{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            background-color: coral;
+            width: 100px;
+            height: 65px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,8 +36,12 @@
         <p><strong><i>Note: The overflow property only works for block elements with specified height. In oxxlion is the name of an operating system on a marked computer and scroll bars are hidden by default on this operating system and only shows when been used even if the overflow is set on scroll</i></strong></p>
     </section>
     <section>
-        <h2>overflow-x nad overflow-y</h2>
-        <p></p>
+        <h2>overflow-x and overflow-y</h2>
+        <p>The <span>overflow-x</span> and overflow-y properties specifies whether to change the overflow  of contents just vertically or horizontally or both.</p>
+        <p><span>Overflow-x</span> specifies what to do with the left/right edges of the contents.</p>
+        <p>Overflow-y specifies what to do with the top/bottom edges of the contents.</p>
+        <br><br>
+        <div class="content">You can use the overflow property when you want to have better control of the layout. The overflow property specify what happens if the contents overflows an element box</div>
     </section>
 </body>
 </html>
