@@ -1,14 +1,19 @@
- /* main css styles */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* main css styles */
  /*
  main css styles
  main css styles
  main css styles
  main css styles
  */
- *{
+ /* *{
     background-color: red;
- }
- h1{
+ } */
+ /* h1{
    color:#FFFFFF;
 }
 p{
@@ -40,4 +45,66 @@ p{
 .left{
    color: red;
    text-decoration: double;
+} */
+/* h1::before{
+   content: url(/assets/emojismile.jpg);
 }
+h1::after{
+   content: url(/assets/emojismile.jpg);
+}
+.icons{
+   height: ;
+}
+:root{
+   background-color: brown;
+} */
+ /* :root{
+   font-size: 32px;
+ } */
+  /* .rem{
+   font-size: 15%;
+   width: 100vw;
+   height: 100vh;
+   background-color: blue;
+  }
+  p{
+   font-size: 1em;
+  } */
+   /* .namediv{
+      position: absolute;
+      width: 2rem;
+      right: 1rem;
+      top: 1rem;
+
+   }
+   .names{
+      width: 100%;
+      height: 3px;
+      display: block;
+      background-color: #000000;
+      position: relative;
+      top: 50%;
+      left: ; */
+      /* right: 1rem; */ 
+    /* }
+   .names::before{
+        content: "";
+        width: 2rem;
+        height: 3px;
+        background-color: #000000;
+        display: block;
+        position: relative;
+        top: -6px;
+   }
+   .names::after{
+       content: "";
+       width: 2rem;
+       height: 3px;
+       background-color: #000000;
+       display: block;
+       position: relative;
+       top: 3px;
+   } */
+   /* body{
+      padding: 2rem;
+}*/
