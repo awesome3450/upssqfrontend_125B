@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* p{
+    width: 100px;
+    padding: 10px;
+    border: 10px solid black;
+} */
+ input{
+    display: block; 
+    margin-top: 10px;
+    max-width: 240px;
+    border: none;
+    padding: 1rem;
+ }
+ input[type="text"]{
+    border-bottom: 1px solid red;
+ }
+ input[type="email"]{
+    border-bottom: 1px solid blue;
+ } 
+ input:focus{
+    outline:none;
+    background-color: magenta;
+}
+ input:hover{
+    width: 272px;
+    border-bottom:  1px  aqua;
+ }
+
