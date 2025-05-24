@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css layout-clear and clearfixed</title>
+    <style>
+        .border-1{
+            border: 2px solid #73ad21;
+        }
+        .border-2{
+            border: 1px solid #e2e2e2;
+        }
+        .float-left2{
+            float: left;
+        }
+        .float-right2{
+            float: right;
+        }
+        .clear2{
+            clear: both;
+        }
+        .clear-left2{
+            clear: left;
+        }
+        .clear-right2{
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">index.html</a>
+     <h2>The clear property</h2>
+     <p>When we use the floating property, and we want te next element to be below</p>
+     <P>The clear property specifies what should happen to the element that is next to the floating element.</P>
+     <p>The clear property can have one of the following values:
+        <ul>the element is not pushed beow left or right element 
+            <li>None- The elements </li>
+            <li>Left- the element is pushed below left floated element</li>
+            <li>Right- the eleent is pushed below right floated element.</li>
+            <li>Both- the element is puhed below right and left floated element.</li>
+            <li>Inherit- the element inherit the clear value from the parent.</li>
+        </ul>
+     </p>
+     <h2>The clearfix hack</h2>
+     <p>if the floated element is taller than the its containing ellement it will outside the container we can then add clear fix hack to solve this problem.</p>
+     <section class="border-2">
+        <div class="border-1">
+          <img src="/assets/pineapple.jpg" alt="pie" class="float-right2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias?
+        </div>
+        <div class="border-1">
+           <img src="/assets/pineapple.jpg" alt="piia" class="float-right2">
+           Lorem ipsum dolor sit, amet consectetur adipisicing.
+        </div>
+     </section>
+</body>
+</html>

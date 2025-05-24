@@ -27,7 +27,7 @@
             float: left;
          }
          .box-size{
-            width: 100px;
+            width: 200px;
             height: 87vh;
          }
          .box-rectangle{
@@ -65,11 +65,17 @@
             clear: left;
         }
         .adjust{
-            width: 92.3vw;
+            width: 85.7vw;
             height: 87vh;
         } 
         .padding-3{
             padding: 5px;
+        }
+        .border-solid{
+            border: 3px solid #73ad21;
+        }
+        .padding-left{
+            padding-left: 2rem;
         }
     </style>
 </head>
@@ -77,21 +83,22 @@
     <!-- <h2>Css-float property</h2>
     <p>The float property allow us to position elements either on the right side/left side. </p> -->
     <div class="black padding-2 text-color box-200 float-left " > Lorem, ipsum.</div>
-    <div class="blue padding text-color box-size clear-both float-left">Lorem, ipsum dol      </div>
+    <div class="blue padding text-color box-size clear-both float-left"> <a href="clear.html" class="text-color">clear.html</a></div>
     <div class="purple padding text-color float-left fill-size adjust">
         <p class="padding-3">The css float property specifies how an element will <i>float</i></p>
         <p class="padding-3">The css clear property specifies what element can float beside the clear element & on which sides</p>
-            <h2>Te float property</h2>
+            <h2>The float property</h2>
             <p> The float property is used for positioning and formatting contents e.g when u want an image to float left in the container.</p>
                 <p>The float propety can have one of the following values:
                     <ul>
                     <li>left- the elements flows to the left of the container</li> 
-                    <li>right- the elements flows to the right of the container</li>
+                    <li>right- the elements flows to the right of the ontainer</li>
                     <li>none- the elements does not float, it is the default property.</li>
                     <li>Inherit- the elements inherit the float value of its parents.</li>
                     </ul>
-                    <p>In its simplest use the float property is used to wrap text around images.</p>
-                    <div><img src="/assets/pineapple.jpg" alt="pineaplle photo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, temporibus?</div>
+                    <p class="">In its simplest use the float property is used to wrap text around images.</p>
+                    <div class="padding-3 border-solid"><img src="/assets/pineapple.jpg" alt="pineapple photo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, temporibus?</div>
     </div>
+   
 </body>
 </html>
