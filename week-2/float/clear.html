@@ -26,6 +26,15 @@
         .clear-right2{
             clear: right;
         }
+        .clear-fix{
+            overflow: auto;
+        }
+        .margin-class{
+            margin-top: 3rem;
+        }
+        .padding2{
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -45,11 +54,11 @@
      <h2>The clearfix hack</h2>
      <p>if the floated element is taller than the its containing ellement it will outside the container we can then add clear fix hack to solve this problem.</p>
      <section class="border-2">
-        <div class="border-1">
+        <div class="border-1 clear-fix padding2">
           <img src="/assets/pineapple.jpg" alt="pie" class="float-right2">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias?
         </div>
-        <div class="border-1">
+        <div class="border-1 margin-class padding2">
            <img src="/assets/pineapple.jpg" alt="piia" class="float-right2">
            Lorem ipsum dolor sit, amet consectetur adipisicing.
         </div>
