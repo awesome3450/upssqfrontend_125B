@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         .padding{
+            padding: 2%;
+         }
+         .text-color{
+            color: white;
+         }
+         .box-100{
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+         }
+         .float-right{
+            float: right; 
+         }
+         .float-left{
+            float: left;
+         }
+         .box-size{
+            width: 100px;
+            height: 87vh;
+         }
+         .box-rectangle{
+            width: 100vw;
+         }
+        div.red{
+            background-color: red;
+        }
+        div.blue{
+            background-color: blue;
+        }
+        div.purple{
+            background-color: rgb(247, 137, 247);
+        }
+        div.black{
+            background-color: black;
+        }
+        .padding-2{
+            padding: 1.5rem;
+        }
+        .clear-both{
+            clear: both;
+        } 
+        .box-200{
+            width: 97vw;
+        } 
+        .fill-size{
+            width: 75%;
+            height: 460px;
+        }
+        .clear-right{
+            clear: right;
+        }
+        .clear-left{
+            clear: left;
+        }
+        .adjust{
+            width: 84.4vw;
+            height: 87vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Css-float property</h2>
+    <p>The float property allow us to position elements either on the right side/left side. </p> -->
+    <div class="black padding-2 text-color box-200 float-right " > Lorem, ipsum.</div>
+    <div class="blue padding text-color box-size clear-both float-left">Lorem, ipsum dol      </div>
+    <div class="purple padding text-color float-left fill-size adjust">
+        <p class="padding-2">The css float property specifies how an element will <i>float</i></p>
+        <p class="padding-2">The css clear property specifies what element can float beside the clear element & on which sides</p>
+            <h2>Te float property</h2>
+            <p> The float property is used for positioning and formatting contents e.g when u want an image to float left in the container.</p>
+                <p>The float propety can have one of the following values:
+                    <ul>left- the elements flows to the left of the container</ul>
+                    <ul>right- the elements flows to the right of the container</ul>
+                    <ul>none- the elements does not float, it is the default property.</ul>
+                </p>
+    </div>
+</body>
+</html>
