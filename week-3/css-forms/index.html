@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-forms</title>
+    <style>
+        .container-grey{
+             background-color: grey;
+             width: 50%;
+             left: 30%;
+             top: 40%;
+             position: absolute;
+        }
+        .container-light-border-left{
+             background-color: beige;
+             padding: 50px 30px;
+             margin: 40px 30px;
+             border-left: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Html forms</h1>
+    <p>An html form is used to collect user input. The user input is most often sent to a server for processing. Using the same</p>
+    <div class="container-grey">
+        <div class="container-light-border-left">
+              <form action="#" method="post">
+                <label for="name">name:</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+                <br>
+                <label for="email">email:</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <label for="password">password:</label>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
