@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-forms</title>
+    <style>
+        .container-grey{
+             background-color: grey;
+             width: 50%;
+             left: 30%;
+             top: 40%;
+             position: absolute;
+        }
+        .container-light-border-left{
+             background-color: beige;
+             padding: 50px 30px;
+             margin: 40px 30px;
+             border-left: 10px solid indigo;
+        }
+        label{
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input{
+            width: 300px;
+        }
+        #button{
+            width: 100px;   
+        }
+    </style>
+</head>
+<body>
+    <h1>Html forms</h1>
+    <p>An html form is used to collect user input. The user input is most often sent to a server for processing. Using the same</p>
+    <div class="container-grey">
+        <div class="container-light-border-left">
+              <form action="#" method="post">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>    
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" name="password">
+                <br>
+                <br>
+                <input type="button" id="button" value="submit">
+              </form>
+        </div>
+    </div>
+</body>
+</html>
