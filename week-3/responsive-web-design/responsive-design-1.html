@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .marginclasses{
+            padding: 10px;
+        } 
+        .col-1{
+            width: 8.3%;
+        }
+        .col-2{
+            width: 15.8%;
+        }
+        .col-3{
+            width: 25.7%;
+        }
+        .col-4{
+           width: 34.9%;
+        }
+        .col-5{
+           width: 44.5%;
+        }
+        .col-6{
+           width: 50%;
+        }
+        .col-7{
+           width: 65.8%;
+        }
+        .col-8{
+           width: 70%;
+        }
+        .col-9{
+           width: 75%;
+        }
+        .col-10{
+            width: 80%;
+        }
+        .col-11{
+             width: 87.3%;
+        }
+        .col-12{
+            width: 100%;
+        }
+        .div1{
+           background-color: blue;
+        }
+        .div2{
+           background-color: brown;
+        }
+        .div3{
+           background-color: blueviolet;
+        }
+        .div4{
+           background-color: aqua;
+        }
+        @media (min-width:375px){
+            .widthclasses{
+            width: 50%;
+          }
+        }
+        @media (min-width:576px){
+            .col-6{
+            width: 50%;
+          }
+          }
+        @media (min-width:1000px){
+            .col-3{
+            width: 25.7%;
+        }   
+        }
+        @media (min-width:1200px){
+            .col-2{
+            width: 15.8%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1 marginclasses col-12 col-2"></div>
+    <div class="div2 marginclasses col-12 col-3"></div>
+    <div class="div3 marginclasses col-12 col-6"></div>
+    <div class="div4 marginclasses col-12 col-6"></div>
+</body>
+</html>
