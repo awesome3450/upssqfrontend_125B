@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css media queries</title>
     <style>
-        .mytable{
+        .tablecustom{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: medium;
             width: 50%;
             color:  black;
             text-align: left;
         }
-        .mytable th{
+        .secondcustom th{
             border: 1px dashed black;
             background-color: green;
             padding: 8px;
             color: white;
         }
-        .mytable td{
+        .thirdcustom td{
             border: 1px solid black;
             padding: 8px;
             color: black;
         }
-        .mytable tr:nth-child(odd){
+        .forthcustom tr:nth-child(odd){
             background-color: grey;
         }
     </style>
@@ -44,7 +44,7 @@
     </ul>
     <p>Using media queries is a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones such as; iphone and android.</p>
     <h2>Css Media types</h2>
-    <table class="mytable">
+    <table class="tablecustom secondcustom thirdcustom forthcustom">
         <thead>
             <tr>
                 <th>Value</th>
@@ -71,5 +71,69 @@
         </tbody>
         <tr></tr>
     </table>
+    <br>
+    <br>
+    <h2>Common media features</h2>
+    <table class="tablecustom secondcustom thirdcustom forthcustom">
+        <thead>
+            <tr>
+                <th>Features</th>
+                <th>Descripion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Orientation</td>
+                <td>Orientation of the viewport(landscape or portrait).</td>
+            </tr>
+            <tr>
+                <td>Max-height</td>
+                <td>Maximum height of the viewport.</td>
+            </tr>
+            <tr>
+                <td>Min-height</td>
+                <td>Minimum height of the viewport.</td>
+            </tr>
+            <tr>
+                <td>Max-width</td>
+                <td>Maximum weeight of the viewport.</td>
+            </tr>
+            <tr>
+                <td>Min-width</td>
+                <td>Minimum width of the viewport.</td>
+            </tr>
+            <tr>
+                <td>Width</td>
+                <td>width of the viewport including the scroll bar.</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>Height of the viewport including the scroll bar.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <h2>Media query syntax</h2>
+    <p>This are the set of rules that guides how media queries are written.</p>
+    <div class="syntax-example">
+        <pre>
+            <code>
+                @media not|only media-type and (media-feature) and (media-feature) {
+                    /* css-rules */
+                }
+            </code>
+        </pre>
+        <p>The media type is optional(if it is omitted, it will be set to all). However, if you use not or only, you must also specify the media type.</p>
+        <p>The result of the query is true if the specified media type marches the type of device the document is being displayed and all media features in the media are true. When a media query is true, the corresponding style sheet or style rules are applied following the normal cascading rues</p>
+    </div>
+    <div class="media">
+        <p>Meaning of the <i>not</i>, <i>only</i> <i>and</i> <i>and</i> keyword</p>
+        <ul>
+            <li><strong>Not</strong>: "Not" negate the media query meaning that the styles wil apply if the media query is false.</li>
+            <li><strong>Only</strong>: "Only" prevents older browsers that donot support media queries for applying the specified styles. It has no effect on modern browsers.</li>
+            <li><strong>And</strong>: "And" combines a media type and one or more features.</li>
+        </ul>
+    </div>
 </body>
 </html>

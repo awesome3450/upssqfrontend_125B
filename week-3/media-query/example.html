@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query Example-1</title>
+    <style>
+        div{
+            padding: 30px;
+            background-color: green;
+            width: 25%;
+            height: 100%;
+        }
+        @media screen and (max-width: 600px) and (min-width: 300px){
+            div{
+                background-color: blue;
+            }
+        }
+        @media screen and (max-height: 600px) and (min-width: 300px) {
+            div{
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <h1>Media query example</h1>
+       <p>This ia a paragraph</p>
+    </div>
+</body>
+</html>
