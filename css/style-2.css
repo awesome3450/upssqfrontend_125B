@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.head{
+    border: 1px green dashed;
+    background-color: lawngreen;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
