@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-item>a{
+    padding: 1em; 
+}
+.nav-item{
+    margin: 1rem;
+}
+/* .flex-item{
+    background-color: orangered;
+    margin: 30px;
+    padding: 40px;
+    border: 1px solid black;
+    width: 40px;
+    height: 30px;
+    color: black;
+ }
+ .flex-container{
+     display: flex;
+     justify-content: space-between;
+ }
+ .inner-div{
+    display: flex;
+ } */
+ /* Styles for flexbox mq test */
+ .header{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding: 1em;
+    min-width: 350px;
+ }
+ h2{
+    /* max-width: 100px; */
+    align-items: center;
+ }
+ .navbar{
+    position: fixed;
+    background-color: lightgrey;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transition: transform 250ms ease-in ease-out;
+    transform: translateX(100%);
+    z-index: 100;
+ }
+ .toggle{
+    padding: 0.5em;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    /* position: absolute;
+    top: 1em;
+    right: 1em;      */
+    z-index: 1000;
+ }
+ .hamburger{
+    position: absolute;
+ }
+ .hamburger,.hamburger::before, .hamburger::after{
+    display: block;
+    background-color: black;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in ease-out;
+    right: 1em;
+ }
+ .hamburger::before, .hamburger::after{
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+ }
+ .hamburger::before{
+    top: 6px;
+ }
+ .hamburger::after{
+    bottom: 6px;
+ }
+
+ /* Media Query 1 */
+ @media (min-width: 882px){ 
+    .navbar{
+        transform: translateX(0);
+        background-color: transparent;
+        position: static;
+    }
+    .nav-item > a{
+         color: black;
+    }
+    .nav-item{
+       text-align: center;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger,.hamburger::before, .hamburger::after{
+        display: none;
+     }
+ } 

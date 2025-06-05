@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+}
+h1{
+    color: white;
+    
+}
+.nav2{
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px;
+}
+ul{
+    display: flex;
+}
+.navi > a{
+    color: white;
+}
+li{
+    list-style: none;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+

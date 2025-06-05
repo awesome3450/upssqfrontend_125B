@@ -120,7 +120,49 @@ h1::after{
 .flex-container{
     display: flex;
     justify-content: space-between;
-}
+} 
 .inner-div{
    display: flex;
 }
+.flex-container-2{
+   background-color: lightblue;
+   display: flex;
+}
+.flex-item-2{
+   background-color: blue;
+   padding: 3px;
+   border: 30px;
+   margin: 4px;
+   width: 70px;
+   height: 80px;
+}
+.flex-container-3 {
+   display: flex;
+   align-items: stretch;
+   background-color: lightgrey;
+ }
+ 
+ .flex-container-3>div {
+   background-color: purple;
+   color: white;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+ }
+.flex-container-4 {
+   display: flex;
+   align-items: stretch;
+   background-color: lightgrey;
+ }
+ 
+ .flex-container-4>div {
+   background-color: green;
+   color: white;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+ }
