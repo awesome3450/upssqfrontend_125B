@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home3{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: blue;
+}
+.weeks{
+    list-style: none;
+}
+.weeks > a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+header{
+    color: white;
+}
+.meta{
+    display: flex;
+    padding: 10px;
+    font-size: small;
+}
+.nav3{
+    padding: 5px;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+.menu{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 100;
+}
+.spanmenu{
+    position: absolute;
+}
+.spanmenu, .spanmenu:before, .spanmenu::after{
+    display: block;
+    background-color: black;
+    width: 3em;
+    height: 5px;
+    border-radius: 1em;
+    transition: transform 150ms ease-in ease-out;
+    right: 1em;
+}
+.spanmenu:before, .spanmenu::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+}
+.spanmenu:before{
+    top: 7px;
+}
+.spanmenu::after{
+     bottom: 7px;
+}
+.nav3{
+    position: fixed;
+    background-color: lightgrey;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transition: transform 250ms ease-in ease-out;
+    transform: translateX(100%);
+    z-index: 100;
+ }
+ .heading2{
+    padding: 20px;
+ }
+ .ai{
+    list-style: none;
+ }
+   .mydiv{
+    display: grid;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 1fr;
+    gap: 5px;
+    background-color: black;
+    padding: 5px;
+    max-width: 100%;
+    margin: auto;
+}
+.section{
+    padding: 9px;
+    margin: 5px;
+}
+.section__title{
+    text-align: center;
+}
+.mydiv > div{
+    background-color: lightgrey;
+    padding: 10px;
+}
+.mydiv > div.sidebar2{
+    grid-area: sidebar;
+}
+.mydiv > div.content2{
+          grid-area: content;
+}
+@media(min-width:378px) {
+    .spanmenu:before, .spanmenu::after{
+        display: none;
+    }
+    .nav3{
+        transform: translateX(0);
+        background-color: transparent;
+        position: static;
+    }
+    .weeks > a{
+         color: black;
+    }
+    .weeks{
+       text-align: center;
+    }
+    .meta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }   
+  .mydiv{
+    display: grid;
+    grid-template-rows: "content2";
+    gap: 5px;
+    background-color: black;
+    padding: 5px;
+    max-width: 100%;
+    margin: auto;
+  }
+}
