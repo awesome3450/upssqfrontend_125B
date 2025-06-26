@@ -17,6 +17,13 @@
         text-transform: uppercase;
         letter-spacing: 3px;
     }
+    .note{
+        background-color: lightgrey;
+        padding: 30px;
+        border-left: 10px solid black;
+        border-radius: 6px;
+        margin: 50px;
+    }
     </style>
 </head>
 <body>
@@ -67,14 +74,24 @@
             <p>What happens when u run javascript in ur page. When u load a webpage in a browser, you are running ur code i.e (html, css and javascript) inside an execution environment which is the browser tab. This is like a factory that takes in raw materials(the code) and output a product(a webpage)</p>
             <p>The very common used of Javascript is to dynamically modify html and css to update a user interfce(UI) via the DOM as mention above.</p>
          </Section> 
-         <h3>Browser Security</h3>
+         <section class="section5">
+            <h3>Browser Security</h3>
          <p>Each browser tab has its own separate bucket for running code(This buckets are called execution environment in technical terms). This means that in most cases, the code in each tab is run completely separately and the code in one tab can't directly affect the code in another tab.</p>
          <h3>Javascript running order.</h3> 
          <p>when a browser encounters a block of javascript, it generally runs it in other from top to bottom. This means that u need to be careful what order u put things.</p>
          <p>In the first example, the code block is called "update name" parentisis(This type of reusable code are called functions: This code block ask a user for a new name amd insert that name into the text of the button.) When we store a reference to a button using document.query selector and attach "add event listener" to it using add event listener so that when the event is clicked, the update name functions is wrong.</p>
          <p>If we were to swap the button=... and button.add event listener ().. the code will not work instead u will get an error returned to the browser developer concept and the error will say "Uncaught Reference Error. Cannot access button before initialization." This means that the button has not been initialized yet so we can not add an event lisitener to it.</p>
          <br>
-         <div><strong>Note:It is not always true that javascript runs in order from top to bottom due to behaviours like hoisting but generally bear in mind that items needs to be defined before you see them.</strong></div>
+         <div class="note"><strong>Note:</strong>It is not always true that javascript runs in order from top to bottom due to behaviours like hoisting but generally bear in mind that items needs to be defined before you see them.</div>
+         </section>
+         <section class="section6">
+            <h3>Interpreted VS Complied code</h3>
+         <p>You might hear the terms, interpreted and complied in the context of programming. In intetrpreted languages, the code is run from top to bottom and the results of running the code is immediately returned. You don't have to transform the code into a different form before the browser runs it, the code is received in the programmer friendly text form and processed directly from that.</p>
+         <br>
+         <p>Complied language on the other hand, are transformed or complied into another form before they are run on the computer e.g C/C++ are complied into machine code that is then run by the computer. The program is executed from a binary format/ byte-code, which was generated from the original source code.</p>
+         <br>
+         <p>Javascript is a light weight interpreted programming language. The web browser recieves the Javascript code in its original text form and runs the script from that. From a technical stand point, most modern javascript interpreters actually use a technique called Just-In -Time compiling(JIT) to improve performance; the javascript source code gets complied into a faster binary format while the script is being used so tht it can be run as quickly as possible. However, javascript is still considered an interpreted language since the compliation is handled at run-time rather than ahead of time.</p>
+         </section>
      <script>
      function updateName() {
         const name = prompt("Enter a new name");
