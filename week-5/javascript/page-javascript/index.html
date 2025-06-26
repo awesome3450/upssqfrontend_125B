@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Add Javascript to ur page</title>
+</head>
+<body>
+    <header>
+        <h2>How to add Javascript to ur page</h2>
+    </header>
+    <p>Javascript is applied to ur html page in a similar way to CSS whereas CSS uses Link element to apply external stylesheet and style element to apply internal element to html, javascript only need one friend in the world of html <span>-</span> The Script Element.</p>
+    <br>
+    <p class="para">You can use scrinbar setting up ut javascript file  and interactive tutorial to learn the different ways to add javascript to html file.</p> 
+    <h3>Internal Javascript</h3>
+    <button>Click me...</button>
+   <ol>
+    <li></li>
+   </ol>
+   <h3>External Javascript</h3>
+   <p>This works great but what if we want to put aour javascript in an external file, follow the steps below:</p>
+   <ol>
+    <li>First, create a new file in the same directory file and call ti index.js & make sure it has the ".js" file extension as this is how it recognised in the</li>
+    <li>Remove the curent script element at the bottom of the body tag/element just before its closing tag</li>
+    <li>Add the script recieved inside the index.js via slack.</li>
+    <li>Save and refresh ur browser.</li>
+   </ol>
+   <hr>
+   <br>
+   <h3>Inline Javascript Handlers</h3>
+   <p>Sometimes, javascript can be included in the html element. This is called inline javascript</p>
+   <button onclick="createParagraph()">Click me!</button>
+   <P>This demonstrates exactly the same functionality as the previous two section except that the button element include an inline <i>onclick handler</i>to make the function rules.</P>
+   <p>Note: make sure u remove the type module of the script tag in the head element otherwise it will not work.</p>
+   <p><strong>Note:</strong> pls don't try this, it is bad practice to pollute ur html with javascript and it is inefficient<span>-</span>you will have to includer the <b>onclick="createParagraph()"</b> on every buttton u want the javascript to apply to.</p>
+   <br>
+   <h3>Using addEventListener</h3>
+   <p>Instead of including javascript to ur html,</p>
+</body>
+</html>
