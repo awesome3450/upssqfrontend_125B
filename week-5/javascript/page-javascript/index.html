@@ -12,7 +12,7 @@
     </header>
     <p>Javascript is applied to ur html page in a similar way to CSS whereas CSS uses Link element to apply external stylesheet and style element to apply internal element to html, javascript only need one friend in the world of html <span>-</span> The Script Element.</p>
     <br>
-    <p class="para">You can use scrinbar setting up ut javascript file  and interactive tutorial to learn the different ways to add javascript to html file.</p> 
+    <p>You can use scrinbar setting up ut javascript file  and interactive tutorial to learn the different ways to add javascript to html file.</p> 
     <h3>Internal Javascript</h3>
     <button>Click me...</button>
    <ol>
@@ -30,12 +30,25 @@
    <br>
    <h3>Inline Javascript Handlers</h3>
    <p>Sometimes, javascript can be included in the html element. This is called inline javascript</p>
-   <button onclick="createParagraph()">Click me!</button>
    <P>This demonstrates exactly the same functionality as the previous two section except that the button element include an inline <i>onclick handler</i>to make the function rules.</P>
    <p>Note: make sure u remove the type module of the script tag in the head element otherwise it will not work.</p>
    <p><strong>Note:</strong> pls don't try this, it is bad practice to pollute ur html with javascript and it is inefficient<span>-</span>you will have to includer the <b>onclick="createParagraph()"</b> on every buttton u want the javascript to apply to.</p>
    <br>
    <h3>Using addEventListener</h3>
-   <p>Instead of including javascript to ur html,</p>
+   <p>Instead of including javascript to ur html, use a pure javascript console. The querySelectorSAll function allows u to select all the buttons on the page, u can hen ;look inti the button assigning a handler for each using addEventListener function</p>
+   <hr>
+   <h3>Script Loading Strategies</h3>
+   <p>All the html in the page  is loaded in the order in which its appears, if u are using javascript to manipulate elements on the page(or more accuratetly in the DOM) your code won't work if the javascript is loaded and parsed before the html u are trying to do something to.</p>
+   <br>
+   <p>There a few diffrerent startegies to make sure your javascript only runs after the html is parsed.</p>
+   <ul>
+    <li>In the extetrnal javascript above which you deleted, the script element is placed at the bottom of the body of the element and then only runs after the rest of the html body is parsed.</li>
+    <li>In the external javascript above, the script element is placed in the head above before the html body is parsed. But because we are using type="module", the code is treated as the module and the browser wait for all html to be processed before executing javascript module (you could also placed external script at the bottom of the body, but if the html is long and the network is slow, it may take time before the broswr can even start fetching and loading the script, so placing external script in the head is usually better.)</li>
+    <li>If u styill want to use non-module script in the document head, which could block the whole page from displaying and which could cause errors</li>
+   </ul>
+   <ul>
+    <li>For external script, we should add the defer(or if u don't need the html to be ready they are synced attribute on the script element)</li>
+    <li>For internal script, you should wrap the code in the domContentLoadedEventListener.</li>
+</ul>
 </body>
 </html>
